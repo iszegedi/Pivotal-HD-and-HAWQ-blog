@@ -8,11 +8,6 @@ BUILD AND RUN THE CODE
 
 Below are the steps to compile the code and execute the MapReduce algorithm:
 
-$ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=highest_stock_price -DartifactId=highest_stock_price
-
-$ vi pom.xml
-Add dependecy and build
-
 $ mvn clean compile
 $ mvn -DskipTests package
 
