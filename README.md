@@ -9,11 +9,15 @@ BUILD AND RUN THE CODE
 Below are the steps to compile the code and execute the MapReduce algorithm:
 
 $ mvn clean compile
+
 $ mvn -DskipTests package
 
 $ cd ~/input
+
 $ hadoop fs -mkdir /stock_demo/input
+
 $ hadoop fs -put *.csv /stock_demo/input/
+
 $ hadoop fs -ls /stock_demo/input/
 
 $ hadoop jar target/highest_stock_price-1.0.jar highest_stock_price/HighestStockPriceDriver /stock_demo/input/ /stock_demo/output/
