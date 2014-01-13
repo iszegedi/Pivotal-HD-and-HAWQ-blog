@@ -22,7 +22,8 @@ Reducer<Text, Text, NullWritable, Text> {
 			double adjclose = Double.parseDouble(tokens[1]);
 			if (adjclose > maxadjclose) {
 				maxadjclose = adjclose;
-				val.set(key.toString() + ":\t" + date + "\t" + String.valueOf(maxadjclose));
+				val.set(key.toString() + ":\t" + date + "\t" 
+				+ String.valueOf(maxadjclose));
 			}
 		}
 		
